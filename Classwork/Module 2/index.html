@@ -23,27 +23,48 @@
             background-color: black;
             margin: 20px;
             font-family: Arial, sans-serif;
+            padding: 105px;
+            text-align: justify;
+            
+            border-image: url('https://www.w3schools.com/css/img_forest.jpg');
+            border-image-slice: 30;     
+            border-image-width: 20px;
+            border-image-outset: 10px;
+            border-image-repeat: stretch;   
         }
         .t{
             text-align: center;
             color: white;
             font-size: 24pt;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 20px;}
+
+        .hove:hover{
+            color: red;
+        }
+        input:focus{
+            color: green;
+            border: 1px solid pink;
         }
 
-        
-        
+        a:visited{
+            color: purple;
+        }
 
+        a/:active{
+            color: orange;
+        }
         
     </style>
 </head>
 <body>
+    <input type="text" height="20px" placeholder="Hello, type here" />
+    <p><a class="t" href="https://www.google.com/?client=safari" target="_blank">Hyperlink</a></p>
     <h1 class="t"> Welcome to my Fruits Shop</h1>
-    <p class="abstext">APPLES</p>
+    <p class="abstext hove">APPLES</p>
     <p class="regtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit autem asperiores rerum, nihil quae sapiente esse ad beatae, eligendi optio explicabo. Aspernatur sunt ipsum hic esse voluptates? Quaerat vero, non atque sapiente illum provident numquam ullam velit vel natus. Neque quas error itaque. Doloremque consequuntur ullam a excepturi vero architecto saepe repudiandae ipsam veniam. Doloribus, dolore. Temporibus, cumque ullam architecto commodi rem, quidem repudiandae aut cupiditate libero reiciendis ratione totam. Soluta, maiores culpa magni velit dignissimos quod expedita ratione optio! Saepe accusantium dignissimos minima voluptates facere quibusdam! Non tempora repellendus nostrum laudantium culpa excepturi at repudiandae eum temporibus debitis?</p>
 
-    <p class="abstext">ORANGES</p>
+    <p class="abstext focu">ORANGES</p>
     <p class="regtext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero suscipit autem asperiores rerum, nihil quae sapiente esse ad beatae, eligendi optio explicabo. Aspernatur sunt ipsum hic esse voluptates? Quaerat vero, non atque sapiente illum provident numquam ullam velit vel natus. Neque quas error itaque. Doloremque consequuntur ullam a excepturi vero architecto saepe repudiandae ipsam veniam. Doloribus, dolore. Temporibus, cumque ullam architecto commodi rem, quidem repudiandae aut cupiditate libero reiciendis ratione totam. Soluta, maiores culpa magni velit dignissimos quod expedita ratione optio! Saepe accusantium dignissimos minima voluptates facere quibusdam! Non tempora repellendus nostrum laudantium culpa excepturi at repudiandae eum temporibus debitis?</p>
 
     <p class="abstext">MANGOES</p>
