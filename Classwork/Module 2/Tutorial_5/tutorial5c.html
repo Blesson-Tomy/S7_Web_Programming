@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Styling</title>
+    <style>
+        body {
+            background-image: url('flowers.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: sans-serif;
+            padding: 2em;
+        }
+
+        a:hover, a:active {
+            background-color: green;
+            color: white;
+        }
+
+        ul {
+             list-style-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiB2aWV3Qm94PSIwIDAgMTYgMTYiPjxwYXRoIGQ9Ik04LjgzNyAxLjkyN2EyLjUgMi41IDAgMCAxIDAgNC4xNDZMMi42OTcgMTQuODVBMi41IDIuNSAwIDAgMSAuMjUgMTIuNzA3bDYtMTAuMzhhMi41IDIuNSAwIDAgMSAyLjU4Ny0uNDAzek0xNiAxMi43MDdhMi41IDIuNSAwIDAgMS0yLjQ0NyAyLjE0M2wtNi0xMC4zOGEyLjUgMi41IDAgMCAxIDAtNC4xNDZsNi4wNTIgMTAuMzh6Ii8+PC9zdmc+');
+            padding-left: 40px;
+        }
+        li::before{
+            content: '';
+            margin-right: 10px;
+            background-image: url('book.svg');
+            display: inline-block;
+            
+            vertical-align: middle;
+            height: 10px;
+            width: 10px;
+        }
+
+        table {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-left: 3px dashed darkred;
+            border-right: 3px dashed darkred;
+            border-top: 4px double darkblue;
+            border-bottom: 4px double darkblue;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .content-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content-box">
+        
+
+        <p>
+            Hover over this <a href="#">special link</a> link please!
+        </p>
+
+        <h2>An Unordered List with Image Bullets</h2>
+        <ul>
+            <li>First item in the list</li>
+            <li>Second item in the list</li>
+            <li>Third item in the list</li>
+        </ul>
+
+        
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
